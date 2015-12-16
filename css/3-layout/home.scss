@@ -1,5 +1,8 @@
+$grid-columns: 14 !global;
+$gutter: (0) !global;
+
 body {
-  @include outer-container;
+  @include outer-container(90%);
 
 }
 
@@ -10,7 +13,7 @@ body {
 
 .box {
   background: tint(red, 40%);
-  // margin: 20px;
+  // margin: 5px;
   @include size(100px);
   float: left;
   @include span-columns(2 of 8);
@@ -19,5 +22,5 @@ body {
 
 p {
   font-family: $helvetica;
-  @include span-columns(4);
+  @include span-columns(6);
 }
