@@ -1,0 +1,14 @@
+.boxes {
+  @include clearfix;
+}
+
+.box {
+  background: tint(red, 40%);
+  @include size(100px);
+  margin: 20px;
+  float: left;
+}
+
+p {
+  font-family: $helvetica;
+}
