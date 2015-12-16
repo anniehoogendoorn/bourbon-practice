@@ -1,7 +1,11 @@
-.boxes {
-  @include clearfix;
+body {
   @include outer-container;
 
+}
+
+.boxes {
+  @include clearfix;
+  @include span-columns(8)
 }
 
 .box {
@@ -9,10 +13,11 @@
   // margin: 20px;
   @include size(100px);
   float: left;
-  @include span-columns(3);
-  // @include omega(4n);
+  @include span-columns(2 of 8);
+  // @include omega(2n);
 }
 
 p {
   font-family: $helvetica;
+  @include span-columns(4);
 }
